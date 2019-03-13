@@ -11,7 +11,7 @@
 
 	'use strict';
 
-function transformMail(selector){
+$.transformMail = function(selector){
     document.querySelectorAll(selector).forEach(function(mail, index){
                 //is this a mail
         if(mail.innerHTML.match (/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi)){
